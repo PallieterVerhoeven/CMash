@@ -1,0 +1,15 @@
+{
+  "require": {
+    "league/fractal": "0.17.*",
+    "igsem/phalcon-swagger": "0.0.*"
+  },
+  "require-dev": {
+    "phalcon/devtools": "3.2.*",
+    "kint-php/kint": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}

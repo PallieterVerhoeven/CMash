@@ -1,0 +1,19 @@
+version: "3.1"
+
+services:
+    cmash-api-webserver:
+        image: nginx:alpine
+        container_name: cmash-api-webserver
+        working_dir: /src
+        volumes:
+            - ./src:/src
+            - ./docker/images/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+        ports:
+            - 8082:80
+
+    cmash-api-php-fpm:
+        build: ./docker/images/php-fpm
+        container_name: cmash-api-php-fpm
+        working_dir: /src
+        volumes:
+            - ./src:/src

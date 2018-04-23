@@ -1,0 +1,7 @@
+
+docker/data/
+src/vendor/
+.idea/
+/src/cache/
+
+\.DS_Store
